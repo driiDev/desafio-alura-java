@@ -41,7 +41,7 @@ public class Main {
                 System.out.println("Saldo atualizado: R$ " + saldo);
                 break;
             case 3:
-                System.out.println("Qual valor deseja tranferir? ");
+                System.out.println("Qual valor deseja transferir? ");
                 double valorTranferido = tc.nextDouble();
                 if (valorTranferido > saldo) {
                     System.out.println("Você não pode realizar essa transação. Saldo insuficiente!");
@@ -53,10 +53,12 @@ public class Main {
                 }
                 break;
             case 4:
+                System.out.println("Saindo do programa...");
                 break;
             default:
-                System.out.println("Opção inválida!");
+                System.out.println("Opção inválida! Tente novamente.");
             }
         }
+        tc.close();
     }
 }
